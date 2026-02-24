@@ -4,6 +4,19 @@ A robust, scalable, and maintainable end-to-end test automation framework built 
 
 ---
 
+## Key Features
+
+- **Data-Driven**: Test data, UI labels, and selectors are stored in JSON files under `data/` — change inputs without touching test code.
+- **Page Object Model**: Each page/screen has a dedicated class in `src/pages/` encapsulating locators and actions.
+- **Typed Everything**: TypeScript interfaces in `src/utils/types/` enforce the shape of every JSON data file.
+- **Environment Variable Overrides**: Credentials can be supplied via `.env` so secrets never live in version control.
+- **Configurable Timeouts**: All timeout values (test, expect, action, navigation) are loaded from `data/timeouts.json`.
+- **Cross-Browser Support**: Preconfigured projects for Chromium, Firefox, and WebKit with parallel execution.
+- **Random Suffixes**: Product titles and subtitles are auto-suffixed with random numbers to avoid duplicate-name collisions.
+- **Caching DataLoader**: JSON files are read once and cached in memory for fast repeated access.
+
+---
+
 ## Table of Contents
 
 - [Key Features](#key-features)
@@ -21,18 +34,6 @@ A robust, scalable, and maintainable end-to-end test automation framework built 
 
 ---
 
-## Key Features
-
-- **Data-Driven**: Test data, UI labels, and selectors are stored in JSON files under `data/` — change inputs without touching test code.
-- **Page Object Model**: Each page/screen has a dedicated class in `src/pages/` encapsulating locators and actions.
-- **Typed Everything**: TypeScript interfaces in `src/utils/types/` enforce the shape of every JSON data file.
-- **Environment Variable Overrides**: Credentials can be supplied via `.env` so secrets never live in version control.
-- **Configurable Timeouts**: All timeout values (test, expect, action, navigation) are loaded from `data/timeouts.json`.
-- **Cross-Browser Support**: Preconfigured projects for Chromium, Firefox, and WebKit with parallel execution.
-- **Random Suffixes**: Product titles and subtitles are auto-suffixed with random numbers to avoid duplicate-name collisions.
-- **Caching DataLoader**: JSON files are read once and cached in memory for fast repeated access.
-
----
 
 ## Tech Stack
 
