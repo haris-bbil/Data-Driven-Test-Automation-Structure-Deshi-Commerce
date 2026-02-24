@@ -1,11 +1,8 @@
 # Deshi Commerce — Data-Driven Test Automation Framework
 
 A robust, scalable, and maintainable end-to-end test automation framework built with **Playwright** and **TypeScript** for the **Deshi Commerce** e-commerce platform. It follows industry best practices including the **Page Object Model (POM)** pattern and a **Data-Driven Testing (DDT)** approach where all test inputs, UI selectors, and expected outcomes are externalized into JSON files.
-
 ---
-
 ## Key Features
-
 - **Data-Driven**: Test data, UI labels, and selectors are stored in JSON files under `data/` — change inputs without touching test code.
 - **Page Object Model**: Each page/screen has a dedicated class in `src/pages/` encapsulating locators and actions.
 - **Typed Everything**: TypeScript interfaces in `src/utils/types/` enforce the shape of every JSON data file.
@@ -14,24 +11,9 @@ A robust, scalable, and maintainable end-to-end test automation framework built 
 - **Cross-Browser Support**: Preconfigured projects for Chromium, Firefox, and WebKit with parallel execution.
 - **Random Suffixes**: Product titles and subtitles are auto-suffixed with random numbers to avoid duplicate-name collisions.
 - **Caching DataLoader**: JSON files are read once and cached in memory for fast repeated access.
-
 ---
-
 ## Table of Contents
-
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Environment Setup](#environment-setup)
-- [Running Tests](#running-tests)
-- [Configuration](#configuration)
-- [Data-Driven Testing](#data-driven-testing)
-- [Page Object Model](#page-object-model)
-- [Utility Modules](#utility-modules)
-- [Adding a New Test](#adding-a-new-test)
-
+- [Key Features](#key-features) - [Tech Stack](#tech-stack) - [Project Structure](#project-structure) - [Prerequisites](#prerequisites) - [Installation](#installation) - [Environment Setup](#environment-setup) - [Running Tests](#running-tests) - [Configuration](#configuration) - [Data-Driven Testing](#data-driven-testing) - [Page Object Model](#page-object-model) - [Utility Modules](#utility-modules) - [Adding a New Test](#adding-a-new-test)
 ---
 
 
