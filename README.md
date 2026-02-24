@@ -13,7 +13,9 @@ A robust, scalable, and maintainable end-to-end test automation framework built 
 - **Caching DataLoader**: JSON files are read once and cached in memory for fast repeated access.
 ---
 ## Table of Contents
-- [Key Features](#key-features) - [Tech Stack](#tech-stack) - [Project Structure](#project-structure) - [Prerequisites](#prerequisites) - [Installation](#installation) - [Environment Setup](#environment-setup) - [Running Tests](#running-tests) - [Configuration](#configuration) - [Data-Driven Testing](#data-driven-testing) - [Page Object Model](#page-object-model) - [Utility Modules](#utility-modules) - [Adding a New Test](#adding-a-new-test)
+- [Key Features](#key-features) - [Tech Stack](#tech-stack) - [Project Structure](#project-structure) - [Prerequisites](#prerequisites) - [Installation](#installation) 
+- [Environment Setup](#environment-setup) - [Running Tests](#running-tests) - [Configuration](#configuration) - [Data-Driven Testing](#data-driven-testing) 
+- [Page Object Model](#page-object-model) - [Utility Modules](#utility-modules) - [Adding a New Test](#adding-a-new-test)
 ---
 
 
