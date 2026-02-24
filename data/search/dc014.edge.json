@@ -1,0 +1,330 @@
+{
+  "cases": [
+    {
+      "id": "E01",
+      "scenario": "no_result_keyword",
+      "keyword": "zzzzz",
+      "expectNoResult": true
+    },
+    {
+      "id": "E02",
+      "scenario": "numeric_keyword",
+      "keyword": "12345",
+      "expectNoResult": true
+    },
+    {
+      "id": "E03",
+      "scenario": "symbolic_keyword",
+      "keyword": "@@@@",
+      "expectNoResult": true
+    },
+    {
+      "id": "E04",
+      "scenario": "empty_keyword",
+      "keyword": "",
+      "expectNoResult": true
+    },
+    {
+      "id": "E05",
+      "scenario": "space_only_keyword",
+      "keyword": "   ",
+      "expectNoResult": true
+    },
+
+    {
+      "id": "E06",
+      "scenario": "sql_injection_keyword",
+      "keyword": "DROP TABLE",
+      "expectNoResult": true
+    },
+    {
+      "id": "E07",
+      "scenario": "xss_keyword",
+      "keyword": "<script>",
+      "expectNoResult": true
+    },
+    {
+      "id": "E08",
+      "scenario": "unicode_keyword",
+      "keyword": "মেহেদী",
+      "expectNoResult": true
+    },
+    {
+      "id": "E09",
+      "scenario": "very_long_keyword",
+      "keyword": "aaaaaaaaaaaaaaaaaaaa",
+      "expectNoResult": true
+    },
+    {
+      "id": "E10",
+      "scenario": "special_chars",
+      "keyword": "!@#$%",
+      "expectNoResult": true
+    },
+
+    {
+      "id": "E11",
+      "scenario": "reload_before_checkout",
+      "keyword": "shirt",
+      "actions": ["reload"],
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E12",
+      "scenario": "go_back_from_results",
+      "keyword": "shirt",
+      "actions": ["goBack"],
+      "expectNoResult": true
+    },
+    {
+      "id": "E13",
+      "scenario": "open_product_then_checkout",
+      "keyword": "shirt",
+      "actions": ["openProduct"],
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E14",
+      "scenario": "reload_then_open_product",
+      "keyword": "shirt",
+      "actions": ["reload", "openProduct"],
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E15",
+      "scenario": "back_then_search_again",
+      "keyword": "shirt",
+      "actions": ["goBack"],
+      "expectNoResult": true
+    },
+
+    {
+      "id": "E16",
+      "scenario": "uppercase_keyword",
+      "keyword": "SHIRT",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E17",
+      "scenario": "mixed_case_keyword",
+      "keyword": "ShiRt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E18",
+      "scenario": "keyword_with_tab",
+      "keyword": "shirt\t",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E19",
+      "scenario": "keyword_with_newline",
+      "keyword": "shirt\n",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E20",
+      "scenario": "keyword_with_spaces",
+      "keyword": " shirt ",
+      "expectOrderSuccess": true
+    },
+
+    {
+      "id": "E21",
+      "scenario": "missing_address",
+      "keyword": "shirt",
+      "address": "",
+      "expectOrderSuccess": false
+    },
+    {
+      "id": "E22",
+      "scenario": "missing_phone",
+      "keyword": "shirt",
+      "phone": "",
+      "expectOrderSuccess": false
+    },
+    {
+      "id": "E23",
+      "scenario": "missing_name",
+      "keyword": "shirt",
+      "fullName": "",
+      "expectOrderSuccess": false
+    },
+    {
+      "id": "E24",
+      "scenario": "short_phone",
+      "keyword": "shirt",
+      "phone": "123",
+      "expectOrderSuccess": false
+    },
+    {
+      "id": "E25",
+      "scenario": "phone_alpha",
+      "keyword": "shirt",
+      "phone": "abc",
+      "expectOrderSuccess": false
+    },
+
+    {
+      "id": "E26",
+      "scenario": "address_symbols",
+      "keyword": "shirt",
+      "address": "@@@@",
+      "expectOrderSuccess": false
+    },
+    {
+      "id": "E27",
+      "scenario": "address_html",
+      "keyword": "shirt",
+      "address": "<b>addr</b>",
+      "expectOrderSuccess": false
+    },
+    {
+      "id": "E28",
+      "scenario": "name_numeric",
+      "keyword": "shirt",
+      "fullName": "12345",
+      "expectOrderSuccess": false
+    },
+    {
+      "id": "E29",
+      "scenario": "name_emoji",
+      "keyword": "shirt",
+      "fullName": "😀😀",
+      "expectOrderSuccess": false
+    },
+    {
+      "id": "E30",
+      "scenario": "all_fields_empty",
+      "keyword": "shirt",
+      "address": "",
+      "fullName": "",
+      "phone": "",
+      "expectOrderSuccess": false
+    },
+
+    {
+      "id": "E31",
+      "scenario": "repeat_search_fast",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E32",
+      "scenario": "search_after_refresh",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E33",
+      "scenario": "search_then_home",
+      "keyword": "shirt",
+      "expectNoResult": true
+    },
+    {
+      "id": "E34",
+      "scenario": "search_change_keyword",
+      "keyword": "pant",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E35",
+      "scenario": "search_multiple_times",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+
+    {
+      "id": "E36",
+      "scenario": "search_and_cart_opened",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E37",
+      "scenario": "search_and_cart_closed",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E38",
+      "scenario": "search_and_checkout_direct",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E39",
+      "scenario": "search_then_url_change",
+      "keyword": "shirt",
+      "expectOrderSuccess": false
+    },
+    {
+      "id": "E40",
+      "scenario": "search_after_login_popup",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+
+    {
+      "id": "E41",
+      "scenario": "search_slow_network",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E42",
+      "scenario": "search_and_verify_cart",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E43",
+      "scenario": "search_and_reorder",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E44",
+      "scenario": "search_back_and_forward",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E45",
+      "scenario": "search_edge_stress",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    },
+
+    {
+      "id": "E46",
+      "scenario": "search_upper_boundary",
+      "keyword": "aaaaaaaaaaaaaaaaaaaaaaaa",
+      "expectNoResult": true
+    },
+    {
+      "id": "E47",
+      "scenario": "search_symbol_mix",
+      "keyword": "sh!@#",
+      "expectNoResult": true
+    },
+    {
+      "id": "E48",
+      "scenario": "search_numeric_suffix",
+      "keyword": "shirt123",
+      "expectNoResult": true
+    },
+    {
+      "id": "E49",
+      "scenario": "search_prefix_space",
+      "keyword": " shirt",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "E50",
+      "scenario": "search_edge_final",
+      "keyword": "shirt",
+      "expectOrderSuccess": true
+    }
+  ]
+}

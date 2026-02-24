@@ -1,0 +1,74 @@
+{
+  "cases": [
+    {
+      "id": "R01",
+      "scenario": "valid_search_and_checkout",
+      "keyword": "midnight",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "R02",
+      "scenario": "search_suggestion_select_and_checkout",
+      "keyword": "mid",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "R03",
+      "scenario": "search_from_header_checkout",
+      "keyword": "MID",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "R04",
+      "scenario": "search_keyword_partial_match",
+      "keyword": "miD",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "R05",
+      "scenario": "search_and_add_to_cart_flow",
+      "keyword": "MinN",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "R06",
+      "scenario": "search_then_checkout_direct",
+      "keyword": "MiDniGht",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "R07",
+      "scenario": "search_product_checkout_happy_path",
+      "keyword": "miDN",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "R08",
+      "scenario": "search_and_place_order",
+      "keyword": "miDniGHT",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "R09",
+      "scenario": "search_with_exact_match",
+      "keyword": "miDNI",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    },
+    {
+      "id": "R10",
+      "scenario": "search_checkout_end_to_end",
+      "keyword": "MIDNIGHT",
+      "productName": "Midnight Onyx Panjabi Set",
+      "expectOrderSuccess": true
+    }
+  ]
+}

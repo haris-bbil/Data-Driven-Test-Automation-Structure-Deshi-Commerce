@@ -1,0 +1,10 @@
+{
+  "heroText": "home",
+  "items": [
+    { "text": "man", "iconAlt": "Man" },
+    { "text": "woman", "iconAlt": "Woman" },
+    { "text": "kid", "iconAlt": "Kid" },
+    { "text": "tools", "iconAlt": "Tools" },
+    { "text": "unisex", "iconAlt": "Unisex" }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "testTimeout": 7200000,
+    "expectTimeout": 15000,
+    "actionTimeout": 30000,
+    "navigationTimeout": 60000
+  }
+]
