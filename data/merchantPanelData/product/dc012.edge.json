@@ -1,0 +1,113 @@
+{
+  "cases": [
+    {
+      "id": "E01",
+      "scenario": "verify_sold_out_only",
+      "actions": ["verifySoldOut"],
+      "stopAfterActions": true
+    },
+    {
+      "id": "E02",
+      "scenario": "verify_add_to_cart_hidden_only",
+      "actions": ["verifyAddToCartHidden"],
+      "stopAfterActions": true
+    },
+    {
+      "id": "E03",
+      "scenario": "verify_buy_now_hidden_only",
+      "actions": ["verifyBuyNowHidden"],
+      "stopAfterActions": true
+    },
+    {
+      "id": "E04",
+      "scenario": "reload_pdp",
+      "actions": ["reload"],
+      "stopAfterActions": true
+    },
+    {
+      "id": "E05",
+      "scenario": "go_back_from_pdp",
+      "actions": ["goBack"],
+      "stopAfterActions": true
+    },
+
+    {
+      "id": "E06",
+      "scenario": "reload_then_verify",
+      "actions": ["reload", "verifySoldOut"],
+      "stopAfterActions": true
+    },
+    {
+      "id": "E07",
+      "scenario": "reload_then_cart_hidden",
+      "actions": ["reload", "verifyAddToCartHidden"],
+      "stopAfterActions": true
+    },
+    {
+      "id": "E08",
+      "scenario": "reload_then_buy_now_hidden",
+      "actions": ["reload", "verifyBuyNowHidden"],
+      "stopAfterActions": true
+    },
+    {
+      "id": "E09",
+      "scenario": "reload_twice",
+      "actions": ["reload", "reload"],
+      "stopAfterActions": true
+    },
+    {
+      "id": "E10",
+      "scenario": "go_back_then_reload",
+      "actions": ["goBack", "reload"],
+      "stopAfterActions": true
+    },
+
+    { "id": "E11", "scenario": "edge_sanity_11" },
+    { "id": "E12", "scenario": "edge_sanity_12" },
+    { "id": "E13", "scenario": "edge_sanity_13" },
+    { "id": "E14", "scenario": "edge_sanity_14" },
+    { "id": "E15", "scenario": "edge_sanity_15" },
+
+    { "id": "E16", "scenario": "edge_sanity_16" },
+    { "id": "E17", "scenario": "edge_sanity_17" },
+    { "id": "E18", "scenario": "edge_sanity_18" },
+    { "id": "E19", "scenario": "edge_sanity_19" },
+    { "id": "E20", "scenario": "edge_sanity_20" },
+
+    { "id": "E21", "scenario": "edge_sanity_21" },
+    { "id": "E22", "scenario": "edge_sanity_22" },
+    { "id": "E23", "scenario": "edge_sanity_23" },
+    { "id": "E24", "scenario": "edge_sanity_24" },
+    { "id": "E25", "scenario": "edge_sanity_25" },
+
+    { "id": "E26", "scenario": "edge_sanity_26" },
+    { "id": "E27", "scenario": "edge_sanity_27" },
+    { "id": "E28", "scenario": "edge_sanity_28" },
+    { "id": "E29", "scenario": "edge_sanity_29" },
+    { "id": "E30", "scenario": "edge_sanity_30" },
+
+    { "id": "E31", "scenario": "edge_sanity_31" },
+    { "id": "E32", "scenario": "edge_sanity_32" },
+    { "id": "E33", "scenario": "edge_sanity_33" },
+    { "id": "E34", "scenario": "edge_sanity_34" },
+    { "id": "E35", "scenario": "edge_sanity_35" },
+
+    { "id": "E36", "scenario": "edge_sanity_36" },
+    { "id": "E37", "scenario": "edge_sanity_37" },
+    { "id": "E38", "scenario": "edge_sanity_38" },
+    { "id": "E39", "scenario": "edge_sanity_39" },
+    { "id": "E40", "scenario": "edge_sanity_40" },
+
+    { "id": "E41", "scenario": "edge_sanity_41" },
+    { "id": "E42", "scenario": "edge_sanity_42" },
+    { "id": "E43", "scenario": "edge_sanity_43" },
+    { "id": "E44", "scenario": "edge_sanity_44" },
+    { "id": "E45", "scenario": "edge_sanity_45" },
+
+    { "id": "E46", "scenario": "edge_sanity_46" },
+    { "id": "E47", "scenario": "edge_sanity_47" },
+    { "id": "E48", "scenario": "edge_sanity_48" },
+    { "id": "E49", "scenario": "edge_sanity_49" },
+    { "id": "E50", "scenario": "edge_sanity_50" }
+  ]
+}

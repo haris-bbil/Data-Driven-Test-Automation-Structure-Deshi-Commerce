@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "TMPDIR=$PWD/.tmp npx playwright test",
+    "test:merchantPanel": "npx playwright test ./src/tests/merchantPanelCoreModuleTest --workers=6 --fully-parallel",
+    "test:orderCreate": "TMPDIR=$PWD/.tmp npx playwright test ./src/tests/merchantPanelCoreModuleTest/orderPageTest/orderCreate.spec.ts --workers=3 --fully-parallel",
     "test:chromium": "TMPDIR=$PWD/.tmp npx playwright test --project=chromium --workers=9",
     "test:firefox": "TMPDIR=$PWD/.tmp npx playwright test --project=firefox --workers=9",
     "test:webkit": "TMPDIR=$PWD/.tmp npx playwright test --project=webkit --workers=9",
@@ -18,6 +20,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
     "@playwright/test": "^1.58.0",
     "@types/dotenv": "^8.2.3",
     "@types/node": "^25.0.8",

@@ -1,0 +1,14 @@
+{
+  "cases": [
+    { "id": "R01", "scenario": "sold_out_visible_on_pdp" },
+    { "id": "R02", "scenario": "add_to_cart_hidden_on_pdp" },
+    { "id": "R03", "scenario": "buy_now_hidden_on_pdp" },
+    { "id": "R04", "scenario": "sold_out_negative_flow" },
+    { "id": "R05", "scenario": "pdp_sold_out_sanity" },
+    { "id": "R06", "scenario": "pdp_restriction_validation" },
+    { "id": "R07", "scenario": "pdp_sold_out_regression" },
+    { "id": "R08", "scenario": "pdp_ui_consistency" },
+    { "id": "R09", "scenario": "pdp_sold_out_behavior" },
+    { "id": "R10", "scenario": "pdp_sold_out_final_check" }
+  ]
+}

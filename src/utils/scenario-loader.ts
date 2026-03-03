@@ -1,4 +1,4 @@
-import DataLoader from "./data-loader";
+import { DataLoader } from "./data-loader";
 import { resolveScenarioType, ScenarioType } from "./types/scenario-types";
 
 type ScenarioFile<T> = {

@@ -1,0 +1,10 @@
+{
+  "ui": {
+    "popupTitle": "Login / SignUp",
+    "emailLabel": "Email",
+    "passwordLabel": "Password",
+    "continueButton": "CONTINUE",
+    "accountSettingsButton": "Account settings",
+    "logoutMenuItem": "Logout"
+  }
+}

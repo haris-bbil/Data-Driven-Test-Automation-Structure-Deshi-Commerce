@@ -1,0 +1,37 @@
+{
+  "ui": {
+    "popupTitle": "Login / SignUp",
+    "phoneLabel": "Phone",
+    "phoneTab": "PHONE",
+    "continueButton": "CONTINUE",
+    "otpLabel": "OTP",
+    "resendOtpButton": "Resend OTP",
+    "snackbarRole": "alert"
+  },
+
+  "phoneValidation": [
+    {
+      "mobileNumber": "",
+      "expectedError": "Please enter a valid 11-digit phone number.",
+      "shouldMatch": true
+    },
+    {
+      "mobileNumber": "",
+      "expectedError": "Invalid Error Name",
+      "shouldMatch": false
+    }
+  ],
+
+  "otpEmpty": [
+    {
+      "phone": "01686667110"
+    }
+  ],
+
+  "otpInvalid": [
+    {
+      "otp": "000000",
+      "expectedError": "Invalid response from server"
+    }
+  ]
+}

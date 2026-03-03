@@ -21,7 +21,7 @@ export interface ProductCreateUI {
 
 export interface ProductCreateData {
   ui: ProductCreateUI;
-  testData: ProductCreateScenario;
+  testData: ProductCreateScenario[];
 }
 
 export interface ProductCreateScenario {

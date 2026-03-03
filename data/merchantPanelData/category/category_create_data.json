@@ -1,0 +1,45 @@
+{
+  "ui": {
+    "dashboardUrl": "https://haris-dashboard.bbil.org/login",
+    "emailLabel": "Enter your email address",
+    "passwordLabel": "Enter your password",
+    "continueButton": "Continue",
+    "loginButton": "Login",
+    "productsLink": "layers Products",
+    "categoriesLink": "C Categories",
+    "titleLabel": "Title *",
+    "descriptionLabel": "Description",
+    "pageTitleLabel": "Page Title",
+    "saveButton": "Save",
+    "successMessage": "Successfully saved",
+    "backupText": "backup",
+    "advancedButton": "Advanced",
+    "proceedLink": "Proceed to haris-dashboard."
+  },
+  "testData": [
+    {
+      "title": "Category",
+      "description": "Test category description",
+      "pageTitle": "Test Category Page",
+      "imagePath": "product_image/multi-tools.jpg",
+      "email": "",
+      "password": ""
+    },
+    {
+      "title": "Office Essentials",
+      "description": "All office utility products",
+      "pageTitle": "Office Essentials Category",
+      "imagePath": "product_image/mash_hammer.jpg",
+      "email": "",
+      "password": ""
+    },
+    {
+      "title": "Home Improvement",
+      "description": "Tools and accessories for home maintenance",
+      "pageTitle": "Home Improvement Category",
+      "imagePath": "product_image/multi-tools.jpg",
+      "email": "",
+      "password": ""
+    }
+  ]
+}

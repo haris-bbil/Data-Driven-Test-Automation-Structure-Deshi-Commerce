@@ -1,0 +1,14 @@
+{
+  "cases": [
+    { "id": "R01", "scenario": "sold_out_badge_visible" },
+    { "id": "R02", "scenario": "add_to_cart_hidden_for_sold_out" },
+    { "id": "R03", "scenario": "sold_out_product_hover" },
+    { "id": "R04", "scenario": "open_cart_from_sold_out_state" },
+    { "id": "R05", "scenario": "sold_out_no_navigation" },
+    { "id": "R06", "scenario": "sold_out_cart_empty_validation" },
+    { "id": "R07", "scenario": "sold_out_ui_consistency" },
+    { "id": "R08", "scenario": "sold_out_negative_flow" },
+    { "id": "R09", "scenario": "sold_out_basic_sanity" },
+    { "id": "R10", "scenario": "sold_out_regression_check" }
+  ]
+}
